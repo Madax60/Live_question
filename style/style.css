@@ -1,0 +1,15 @@
+/*.test{
+	border-bottom-left-radius: 800px 80px;
+	border-bottom-right-radius: 800px 80px;
+	color: blue;
+	border: solid;
+	height: 50vh;
+}*/
+
+.couleur{
+	background-color: #ec008c;
+	color: white;
+	border:none;
+	border-radius:20px;
+
+}

@@ -1,0 +1,16 @@
+#accueil{
+    background-color: #002A37;
+    border-bottom-left-radius:50% 10%;
+    border-bottom-right-radius:50% 10%;
+}
+
+.boutonAccueil{
+    background-color: #ec008c;
+    border: none;
+}
+
+@media screen and (max-width: 768px) {
+    #accueil{
+        text-align: center;
+    }
+}

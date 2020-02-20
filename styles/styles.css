@@ -9,8 +9,22 @@
     border: none;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
     #accueil{
         text-align: center;
     }
+}
+
+.couleurP{
+    background-color: #ec008c;
+    color: white;
+    border:none;
+    border-radius:20px;
+}
+
+.couleurS{
+    background-color: #002A37;
+    color: white;
+    border:none;
+    border-radius:20px;
 }

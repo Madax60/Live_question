@@ -1,3 +1,4 @@
+
 #partenaires{
 	border-bottom-left-radius: 800px 80px;
 	border-bottom-right-radius: 800px 80px;
@@ -23,9 +24,14 @@
 	margin: auto;
 }
 
-p{
+#partenaire,#video,#texte-partenaire p{
 	color:white;
 }
+
+#texte-footer{
+	color:white;
+}
+
 h3{
 	color: white;
 }
@@ -52,3 +58,35 @@ footer{
 #texte-video{
 	padding-top: 10%;
 }
+
+#accueil{
+    background-color: #002A37;
+    border-bottom-left-radius:50% 10%;
+    border-bottom-right-radius:50% 10%;
+}
+
+.boutonAccueil{
+    background-color: #ec008c;
+    border: none;
+}
+
+@media screen and (max-width: 992px) {
+    #accueil{
+        text-align: center;
+    }
+}
+
+.couleurP{
+    background-color: #ec008c;
+    color: white;
+    border:none;
+    border-radius:20px;
+}
+
+.couleurS{
+    background-color: #002A37;
+    color: white;
+    border:none;
+    border-radius:20px;
+}
+

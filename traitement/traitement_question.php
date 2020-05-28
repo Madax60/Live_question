@@ -1,12 +1,5 @@
 <?php 
-try
-{
-	$bdd = new PDO('mysql:host=localhost;dbname=live_question;charset=utf8', 'root', '');
-}
-catch (Exception $e)
-{
-        die('Erreur : ' . $e->getMessage());
-}
+include_once('./traitement/connexiondb.php'); // Fichier PHP contenant la connexion à votre BDD
 
 $questions = $bdd->query('SELECT * FROM question');
 

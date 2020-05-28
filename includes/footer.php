@@ -1,5 +1,5 @@
 
-	<footer class="bg-dark fixed-bottom text-center">
+	<footer class="bg-dark text-center">
 
 		<!-- Optional JavaScript -->
 	    <!-- jQuery first, then Popper.js, then Bootstrap JS -->

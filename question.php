@@ -1,14 +1,27 @@
-<?php include_once ("./includes/header.php");?>
+<?php 
+    include_once ("./includes/header.php");
+    include_once ("./traitement/traitement_question.php");
+    // On affiche chaque entrée une à une
+    while ($donnees = $questions->fetch())
+    {
+?>
 
     <section class="container-fluid">
-        <article class="container-fluid couleurS">
+        <article class="container-fluid couleurS w-75">
             <div class="media my-4 p-4">
                 <img src="./ressources/marque1.jpg" class="mr-3" alt="...">
                 <div class="media-body">
-                    <h5 class="mt-0">Media heading</h5>
-                    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                    <h5><?php echo $donnees["#Id_profil"] ?></h5>
+                    <h3 class="textP"><?php echo $donnees["Titre_question"] ?></h3>
                 </div>
+                <h5><?php echo $donnees["Date_creation_question"] ?></h5>
             </div>
         </article>
     </section>
-<?php include_once ("./includes/footer.php");?>
+
+<?php 
+    };
+    include_once ("./includes/footer.php");
+?>
+
+

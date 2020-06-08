@@ -3,9 +3,9 @@
 include_once('./traitement/connexiondb.php'); // Fichier PHP contenant la connexion à votre BDDgenre
  
 if(isset($_POST['forminscription'])) {
-   $pseudo = $_POST['pseudo'];
-   $mail = $_POST['mail'];
-   $genre = $_POST['genre'];
+   $pseudo = htmlspecialchars($_POST['pseudo']);
+   $mail = htmlspecialchars($_POST['mail']);
+   $genre = htmlspecialchars($_POST['genre']);
    $mdp = sha1($_POST['mdp']);
    $mdp2 = sha1($_POST['mdp2']);
    if(!empty($_POST['pseudo']) AND !empty($_POST['mail']) AND !empty($_POST['genre']) AND !empty($_POST['mdp']) AND !empty($_POST['mdp2'])) {

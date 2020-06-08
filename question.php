@@ -5,7 +5,6 @@
     while ($donnees = $questions->fetch())
     {
 ?>
-    
 
     <section class="container-fluid">
         <article class="container-fluid couleurS w-75">
@@ -24,5 +23,3 @@
     };
     include_once ("./includes/footer.php");
 ?>
-
-

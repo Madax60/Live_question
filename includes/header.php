@@ -38,7 +38,7 @@
 					 	
 					</ul>
 					<div class="row">	
-						<a type="button" class="couleurP col-md-12 px-md-3 p-2">Se connecter</a>
+						<a href="./connexion.php" type="button" class="couleurP col-md-12 px-md-3 p-2">Se connecter</a>
 						<a href="./inscription.php" type="button" class="col-md-12 px-md-3 p-2 text-center">S'inscrire</a>
 					</div>
 						

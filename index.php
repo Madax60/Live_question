@@ -1,5 +1,5 @@
 <?php
-include_once ("includes/header.php");
+include_once ("./includes/header.php");
 ?>
 <!-- ############ Partie accueil ########### -->
 <section id="accueil" class="container-fluid row m-auto text-white p-4 border-bottom">
@@ -63,25 +63,25 @@ include_once ("includes/header.php");
 	</div>
 	<div id="logo-partenaires" class="pt-5 text-center col-xs-12 col-sm-6 col-md-8 col-lg-12">
 		<div class="">
-			<button type="button" class="couleur-marque ml-2 float-left"><img src="images/marque1.jpg" class="py-1 my-1" width="25px" height="30px"> <span class="px-1 mx-1">Kyan Boards</span></button>
+			<button type="button" class="couleur-marque ml-2 float-left"><img src="ressources/marque1.jpg" class="py-1 my-1" width="25px" height="30px"> <span class="px-1 mx-1">Kyan Boards</span></button>
 		</div>
 		<div class="">
-			<button type="button" class="couleur-marque ml-2  float-left"><img src="images/marque2.jpg" class="py-1 my-1" width="25px" height="30px"> <span class="px-1 mx-1">Atica</span></button>
+			<button type="button" class="couleur-marque ml-2  float-left"><img src="ressources/marque2.jpg" class="py-1 my-1" width="25px" height="30px"> <span class="px-1 mx-1">Atica</span></button>
 		</div>
 		<div class="">
-			<button type="button" class="couleur-marque ml-2 float-left"><img src="images/marque3.jpg" class="py-1 my-1" width="25px" height="30px"> <span class="px-1 mx-1">Treva</span></button>
+			<button type="button" class="couleur-marque ml-2 float-left"><img src="ressources/marque3.jpg" class="py-1 my-1" width="25px" height="30px"> <span class="px-1 mx-1">Treva</span></button>
 		</div>
 		<div class="">
-			<button type="button" class="couleur-marque ml-2 float-left"><img src="images/marque4.jpg" class="py-1 my-1" width="25px" height="30px"> <span class="px-1 mx-1">Kanba</span></button>
+			<button type="button" class="couleur-marque ml-2 float-left"><img src="ressources/marque4.jpg" class="py-1 my-1" width="25px" height="30px"> <span class="px-1 mx-1">Kanba</span></button>
 		</div>
 		<div class="">
-			<button type="button" class="couleur-marque ml-2 float-left"><img src="images/marque5.jpg" class="py-1 my-1" width="25px" height="30px"> <span class="px-1 mx-1">Tvit Forms</span></button>
+			<button type="button" class="couleur-marque ml-2 float-left"><img src="ressources/marque5.jpg" class="py-1 my-1" width="25px" height="30px"> <span class="px-1 mx-1">Tvit Forms</span></button>
 		</div>
 		<div class="">
-			<button type="button" class="couleur-marque ml-2 float-left"><img src="images/marque6.jpg" class="py-1 my-1" width="25px" height="30px"> <span class="px-1 mx-1">Aven</span></button>
+			<button type="button" class="couleur-marque ml-2 float-left"><img src="ressources/marque6.jpg" class="py-1 my-1" width="25px" height="30px"> <span class="px-1 mx-1">Aven</span></button>
 		</div>
 		<div class="">
-			<button type="button" class="couleur-marque ml-2 float-left"><img src="images/marque7.jpg" class="py-1 my-1" width="25px" height="30px"> <span class="px-1 mx-1">Utosia</span></button>
+			<button type="button" class="couleur-marque ml-2 float-left"><img src="ressources/marque7.jpg" class="py-1 my-1" width="25px" height="30px"> <span class="px-1 mx-1">Utosia</span></button>
 		</div>
 	</div>
 	</div>

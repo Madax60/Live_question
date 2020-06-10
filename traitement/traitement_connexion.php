@@ -1,5 +1,7 @@
 <?php
-session_start();
+if(!isset($_SESSION)){
+    session_start();
+}
 include_once('./traitement/connexiondb.php'); // Fichier PHP contenant la connexion à votre BDDgenre
  
 if(isset($_POST['formconnection'])) 
@@ -14,9 +16,9 @@ if(isset($_POST['formconnection']))
       if ($userexist == 1) 
       {
          $userinfo = $requser->fetch();
-         $_SESSION['id'] = $userinfo['id'];
-         $_SESSION['pseudo'] = $userinfo['pseudo'];
-         $_SESSION['mail'] = $userinfo['mail'];
+         $_SESSION['id'] = $userinfo['Id_profil'];
+         $_SESSION['pseudo'] = $userinfo['Pseudo_profil'];
+         $_SESSION['mail'] = $userinfo['Mail_profil'];
          header("Location: profil.php?id=".$_SESSION['id']);
 
       }

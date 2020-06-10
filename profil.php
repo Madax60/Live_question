@@ -4,23 +4,26 @@ include_once("./traitement/traitement_profil.php");
 
 ?>
 
-<div align="center">
-   <h2>Profil de <?php echo $userinfo['Pseudo_profil']; ?></h2>
-   <p><?php echo $userinfo['Pseudo_profil'] ?></p>
-   <p><?php echo $userinfo['Mail_profil'] ?></p>
+
 
    <?php
-   if(isset($_SESSION['id']) AND $userinfo['id'] == $_SESSION) 
+   if(isset($_SESSION['id']) AND $userinfo['Id_profil'] == $_SESSION['id']) 
    {
       ?>
-      <a href="#">Editer mon profil</a>
-      <a href="deconnexion.php">Se déconnecter</a>
+      <div align="center">
+      <h2>Profil de <?php echo $userinfo['Pseudo_profil']; ?></h2>
+      <p><?php echo $userinfo['Pseudo_profil'] ?></p>
+      <p><?php echo $userinfo['Mail_profil'] ?></p>
+      <h5><a href="./edition_profil.php" >Editer mon profil</a></h5>
+      
       <?php  
+   }else{
+      header('location: ./connexion.php');
    };
    ?>
 </div>
 
 <?php
-include_once ("includes/footer.php");
+include_once ("./includes/footer.php");
 
 ?>

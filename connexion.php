@@ -5,7 +5,7 @@
 
 <div align="center">
          <h2>Connexion</h2>
-         <br /><br />
+         <br/><br/>
          <form method="POST" action="">
             <div>
                <label for="pseudo">E-mail :</label>

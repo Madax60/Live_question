@@ -20,7 +20,13 @@
                     </div>
                 </div>
             </aside>
-            <aside class="container col-xs-6 col-sm-6 col-md-6 col-lg-6 p-0">
+
+            
+            <aside class="container col-xs-6 col-sm-6 col-md-6 col-lg-6 p-0 text-center">
+            <?php 
+            if(isset($_SESSION['id']))
+            { 
+            ?>
                 <form action="ajoutRep.php" class="col-xs-12 col-sm-12 col-md-8 col-lg-8 my-4 mx-auto p-4 couleurP">
                     <div class="form-group">
                         <label for="exampleInputEmail1">Répondre à la question</label>
@@ -31,7 +37,16 @@
                     </p>
 
                 </form>
+            <?php  
+            }else
+            { 
+                echo "Vous devez être connecté pour pouvoir répondre !";
+            }
+
+            ?>
             </aside>
+            
+            
 
         </article>
     </section>

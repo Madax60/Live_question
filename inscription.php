@@ -5,8 +5,8 @@ $bodyClass = "bgConnex";
 include_once ("includes/header.php");
 ?>
 
-<div class="bgInscrip">
-		<section class="formuInscrip m-auto">
+<div class="row">
+		<section class="formuInscrip m-auto col-md-6">
 			<div style="text-shadow:1px 1px 1px  #C8C8C8">
 		         <h2 align="center">Inscription</h2>
 		         <br /><br />
@@ -24,15 +24,17 @@ include_once ("includes/header.php");
       						<input type="email" class="form-control" id="mail" placeholder="Votre Adresse mail">
     					</div>
   					</div>
-
-  					<div class="form-check form-check-inline col-auto" style="margin-left: 10vw; margin-bottom:1vh; " >
-  						<input class="form-check-input" type="radio" name="genre" id="masculin" value="Masculin">
-						<label class="form-check-label" for="masculin">Homme</label>
-					</div>
-						<div class="form-check form-check-inline col-auto">
-  							<input class="form-check-input" type="radio" name="genre" id="feminin" value="Féminin">
-  							<label class="form-check-label" for="feminin">Femme</label>
-						</div>
+            <div class="row ">
+                <div class=" col-md-6" style=" margin-bottom:1vh; " >
+                <input class="form-check-input" type="radio" name="genre" id="masculin" value="Masculin">
+                <label class="form-check-label" for="masculin">Homme</label>
+                </div>
+                <div class=" col-md-6">
+                  <input class="form-check-input" type="radio" name="genre" id="feminin" value="Féminin">
+                  <label class="form-check-label" for="feminin">Femme</label>
+              </div>
+            </div>
+  					
 
 		             <div class="form-group row">
     					<div class="col-sm-4">
@@ -45,7 +47,7 @@ include_once ("includes/header.php");
 
 					<div class="form-group row">
     					<div class="col-sm-4">
-    						<label align="center" for="mdp2" class="form-label">Mot de Passe</label>
+    						<label align="center" for="mdp2" class="form-label">Confirmation Mot de Passe</label>
     					</div>
     					<div class="col-sm-8">
       						<input type="text" class="form-control" id="mdp2" placeholder="Confirmez votre mdp">

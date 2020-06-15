@@ -1,30 +1,47 @@
 <?php
-    include_once ("includes/header.php");
-    include_once('./traitement/traitement_connexion.php'); // Fichier PHP contenant la connexion à votre BDD
+
+$bodyClass = "bgConnex";
+
+include_once ("includes/header.php");
 ?>
 
-<div align="center">
-         <h2>Connexion</h2>
-         <br/><br/>
-         <form method="POST" action="">
-            <div>
-               <label for="pseudo">E-mail :</label>
-               <input type="email" placeholder="Votre pseudo" id="pseudo" name="mailconnect"/>
-            </div>
-            <div>
-               <label for="mdp">Mot de passe :</label>
-               <input type="password" placeholder="Votre mot de passe" id="mdp" name="mdpconnect" />
-            </div>
-            <div>
-               <input type="submit" name="formconnection" value="Se connecter" />
-            </div>
-         </form>
-         <?php
-         if(isset($erreur)) {
-            echo '<font color="red">'.$erreur."</font>";
-         }
-         ?>
+<div class="bgConnex">
+		<section class="formuConnex m-auto">
+			<div style="text-shadow:1px 1px 1px  #C8C8C8">
+		         <h2 align="center">Connexion</h2>
+		         <br /><br />
+		         <form method="POST" action="">
+		             <div class="form-group row">
+    					<label align="center" for="pseudo" class="col-sm-4 col-form-label">Pseudo</label>
+    					<div class="col-sm-8">
+      						<input type="text" class="form-control" id="pseudo" placeholder="Votre Pseudo">
+    					</div>
+  					</div>
+		             <div class="form-group row" style="margin-top: 6vh;">
+    					<div class="col-sm-4">
+    						<label align="center" for="mdp" class="form-label">Mot de Passe</label>
+    					</div>
+    					<div class="col-sm-8">
+      						<input type="text" class="form-control" id="mdp" placeholder="Votre Mot de Passe">
+    					</div>
+  					</div>
+		            <div class="form-group row" style="margin-top:6vh; ">
+		               <button type="submit" name="formconnexion"class="btn btn-primary my-auto mx-auto">Je me connecte</button>
+		            </div>
+		         </form>
+		         <?php
+		         if(isset($erreur)) {
+		            echo '<font color="red">'.$erreur."</font>";
+		         }
+		         ?>
+			</div>
+		</section>
+	  
+
 </div>
+
+
+
 
 <?php
 include_once ("includes/footer.php");

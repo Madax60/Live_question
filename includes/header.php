@@ -1,3 +1,6 @@
+<?php 
+include_once("./traitement/traitement_profil.php")
+ ?>
 <!DOCTYPE html>
 <html lang="fr">
 	<head>
@@ -30,17 +33,35 @@
 					        <a class="textNavBar text-center" href="question.php">Listes des questions</a>
 					    </li>
 					    <li class="nav-item dropdown mx-4">
-					        <a class="textNavBar text-center" href="#">Link3</a>
+					        <a class="textNavBar text-center" href="ajoutQuestion.php">Ajouter une question</a>
 					    </li>
 					    <li class="nav-item dropdown mx-4">
 					        <a class="textNavBar text-center" href="#">Link4</a>
 					    </li>
 					 	
 					</ul>
-					<div class="row">	
-						<a type="button" class="couleurP col-md-12 px-md-3 p-2">Se connecter</a>
-						<a href="./inscription.php" type="button" class="col-md-12 px-md-3 p-2 text-center">S'inscrire</a>
-					</div>
+					<?php 
+						if(isset($_SESSION['id']))
+						{ 
+							echo '
+								<div class="row text-center">	
+									<a href="./profil.php" type="button" class="couleurP col-md-8 px-md-3 p-2">Mon profil</a>
+									<a href="./deconnexion.php" type="button" class="col-md-8 px-md-3 p-2 text-center">Se déconnecter</a>
+								</div>
+							';
+							
+						}else
+						{ 
+							echo'	
+								<div class="row text-center">	
+									<a href="./connexion.php" type="button" class="couleurP col-md-8 px-md-3 p-2">Se connecter</a>
+									<a href="./inscription.php" type="button" class="col-md-8 px-md-3 p-2 text-center">S&apos;inscrire</a>
+								</div>
+							'; 
+						}
+	
+					 ?>
+						
 						
 				</div>
 				

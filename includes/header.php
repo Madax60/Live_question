@@ -14,7 +14,7 @@ include_once("./traitement/traitement_profil.php")
 
 		<title>Live Question</title>
 	</head>
-<body>
+<body <?php if (isset($bodyClass)) { echo 'class="'.$bodyClass.'"'; } ?>>
   	<div class="container-fluid m-0 p-0">
 
 		<!-- navbar (+ logo) + responsive (conversion en icon hamburger) -->

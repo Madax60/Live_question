@@ -1,3 +1,4 @@
+
 h3{
 	color:white;
 }
@@ -137,3 +138,43 @@ a,a:hover{
     border-radius:20px;
 }
 
+/* Style page d'inscription */
+.formuInscrip{
+    background:#F2E3ED; 
+    border-radius: 7px;
+    padding:30px;
+    box-shadow:5px 5px 5px black;
+}
+
+.champs{
+    padding-bottom: 2vh;
+}
+
+/* Style page connexion */
+
+.bgConnex{
+    background-image: url(../ressources/inscrip.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin:0;
+    padding:0;
+
+}
+
+.formuConnex{
+    height:70%;
+    background:#F2E3ED; 
+    border-radius: 7px;
+    padding:30px;
+    box-shadow:5px 5px 5px black;
+}
+@media screen and (max-width: 576px){
+	.formuConnex{
+		width:100%
+		height:10%;
+	}
+
+	.formuInscrip{
+
+	}
+}

@@ -17,9 +17,9 @@
             </div>
             <div>
                <input type="radio" id="masculin" name="genre" value="Masculin" checked>
-               <label for="masculin">Masculin</label>
+               <label for="masculin">Homme</label>
                <input type="radio" id="feminin" name="genre" value="Féminin">
-               <label for="feminin">Féminin</label>
+               <label for="feminin">Femme</label>
             </div>
             <div>
                <label for="mdp">Mot de passe :</label>

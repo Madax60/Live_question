@@ -1,7 +1,4 @@
 <?php
-if(!isset($_SESSION)){
-    session_start();
-}
 include_once("./traitement/connexiondb.php");
 
 if(isset($_SESSION['id'])) {

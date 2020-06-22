@@ -1,5 +1,4 @@
 <?php
-
 include_once('./traitement/connexiondb.php'); // Fichier PHP contenant la connexion à votre BDDgenre
  
 if(isset($_POST['forminscription'])) {
@@ -18,11 +17,8 @@ if(isset($_POST['forminscription'])) {
                if($mailexist == 0) {
                   if($mdp == $mdp2) {
                      $insertmbr = $bdd->prepare("INSERT INTO `profil` (`Pseudo_profil`, `Mail_profil`, `MotDePasse_profil`, `Genre_profil`, `Id_role`) VALUES ( ?, ?, ?, ?, 2);");
-                     $insertmbr->execute(array($pseudo, $mail, $genre, $mdp));
-                     var_dump($pseudo);
-                     var_dump($mail);
-                     var_dump($genre);
-                     var_dump($mdp);
+                     $insertmbr->execute(array($pseudo, $mail, $mdp, $genre));
+
                      $erreur = "Votre compte a bien été créé ! <a href=\"connexion.php\">Me connecter</a>";
                   } else {
                      $erreur = "Vos mots de passes ne correspondent pas !";

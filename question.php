@@ -2,6 +2,7 @@
     include_once ("./includes/header.php");
     include_once ("./traitement/traitement_question.php");
     // On affiche chaque entrée une à une
+
     while ($donnees = $questions->fetch())
     {
 ?>
@@ -12,7 +13,7 @@
                 <img src="./ressources/marque1.jpg" class="mr-3" alt="...">
                 <div class="media-body">
                     <h5><?php echo $donnees["Pseudo_profil"] ?></h5>
-                    <a href=""><h3 class="textP"><?php echo $donnees["Titre_question"] ?></h3>
+                    <a href="./question_reponse.php?id=<?php echo $donnees['Id_question']; ?>"><h3 class="textP"><?php echo $donnees["Titre_question"] ?></h3>
                     </a>
                     <h6><i><?php echo $donnees["Libelle_categorie"] ?></i></h6>
                 </div>

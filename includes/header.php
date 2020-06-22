@@ -14,7 +14,7 @@ include_once("./traitement/traitement_profil.php")
 
 		<title>Live Question</title>
 	</head>
-<body>
+<body <?php if (isset($bodyClass)) { echo 'class="'.$bodyClass.'"'; } ?>>
   	<div class="container-fluid m-0 p-0">
 
 		<!-- navbar (+ logo) + responsive (conversion en icon hamburger) -->
@@ -33,7 +33,7 @@ include_once("./traitement/traitement_profil.php")
 					        <a class="textNavBar text-center" href="question.php">Listes des questions</a>
 					    </li>
 					    <li class="nav-item dropdown mx-4">
-					        <a class="textNavBar text-center" href="#">Link3</a>
+					        <a class="textNavBar text-center" href="ajoutQuestion.php">Ajouter une question</a>
 					    </li>
 					    <li class="nav-item dropdown mx-4">
 					        <a class="textNavBar text-center" href="#">Link4</a>

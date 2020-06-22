@@ -23,7 +23,7 @@ include_once ("./includes/header.php");
     <div id="propos" class="container row mx-auto my-4 w-75 text-dark">
         <article class="container col-md-4 col-lg-4 col-sm-12 col-xs-12">
             <img src="ressources/i1.png" alt="icone numéro 1">
-            <h3>Suits Your Style</h3>
+            <h2>Suits Your Style</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                 Amet animi aspernatur autem est ex explicabo, fugiat ipsam,
                 iste itaque iusto natus non odit perspiciatis recusandae sed
@@ -31,7 +31,7 @@ include_once ("./includes/header.php");
         </article>
         <article class="container col-md-4 col-lg-4 col-sm-12 col-xs-12">
             <img src="ressources/i2.png" alt="icone numéro 2">
-            <h3>Suits Your Style</h3>
+            <h2>Suits Your Style</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                 Amet animi aspernatur autem est ex explicabo, fugiat ipsam,
                 iste itaque iusto natus non odit perspiciatis recusandae sed
@@ -51,13 +51,13 @@ include_once ("./includes/header.php");
 
 <!-- DIV VIDEO -->
 <div class="container-fluid m-0 p-0 bg-dark" id="video">
-	<p class="text-center font-weight-bold pl-1" id="texte-video"><img src="images/iplay.png">"Nulla venenatis magna fringilla"</p>
+	<p class="text-center font-weight-bold pl-1" id="texte-video"><img src="ressources/iplay.png">"Nulla venenatis magna fringilla"</p>
 </div>
 
 <!-- DIV PARTENAIRE -->
 <div class="container-fluid m-0 p-0 text-center">
-	<div class="text-center pt-5" id="partenaires">
-	<h3>Etiam laot, alique sceleris.</h3>
+	<div class="text-center font-weight-bold pt-5" id="partenaires">
+	    <h3>Etiam laot, alique sceleris.</h3>
 	<div id="texte-partenaire" class="px-2 mx-2">
 		<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa.</p>
 	</div>
@@ -86,8 +86,38 @@ include_once ("./includes/header.php");
 	</div>
 	</div>
 </div>
+<div id="FAQ" class="text-center w-50 mx-auto">
+    <div>
+        <h2>FAQ</h2>
+        <p class="text-muted">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa.</p>
+    </div>
+    <button class="collapsible">Can I upgrade later on?</button>
+    <div class="content">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+    <button class="collapsible">Can I port my data from another provider?</button>
+    <div class="content">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+    <button class="collapsible">Are my food photos stored forever in the cloud</button>
+    <div class="content">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+    <button class="collapsible">Who foots the bills for that</button>
+    <div class="content">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+    <button class="collapsible">What's the real cost</button>
+    <div class="content">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+    <button class="collapsible">Can my company request a custom plan</button>
+    <div class="content">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+
+</div>
 
 <?php
 include_once ("includes/footer.php");
 ?>
-

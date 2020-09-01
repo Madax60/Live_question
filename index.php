@@ -2,10 +2,10 @@
 include_once ("./includes/header.php");
 ?>
 <!-- ############ Partie accueil ########### -->
-<section id="accueil" class="container-fluid row m-auto text-white p-4 border-bottom">
-    <div style="height: 70vh" class="container row m-auto w-75">
+<section id="accueil" class="container-fluid bgaccueil row m-auto text-white border-bottom">
+    <div class="container row m-auto w-75">
         <article class="container col-xs-12 col-sm-12 col-md-12 col-lg-4">
-            <h1 style="font-size: 45px">Lorem ipsum dolor sit amet.</h1>
+            <h1>Lorem ipsum dolor sit amet.</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                 Blanditiis dicta doloribus exercitationem iusto minima minus,
                 modi molestiae neque perferendis quae quaerat qui quidem quo
@@ -19,8 +19,8 @@ include_once ("./includes/header.php");
 </section>
 <!-- ############ Fin accueil ########### -->
 <!-- ############ A propos ########### -->
-<section class="container-fluid">
-    <div id="propos" class="container row mx-auto my-4 w-75 text-dark">
+<section class="container-fluid p-5">
+    <div id="propos" class="container row mx-auto my-5 w-75 text-dark">
         <article class="container col-md-4 col-lg-4 col-sm-12 col-xs-12">
             <img src="ressources/i1.png" alt="icone numéro 1">
             <h2>Suits Your Style</h2>

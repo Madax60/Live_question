@@ -16,9 +16,9 @@ include_once("./traitement/traitement_profil.php")
 	</head>
 <body <?php if (isset($bodyClass)) { echo 'class="'.$bodyClass.'"'; } ?>>
   	<div class="container-fluid m-0 p-0">
-
-		<!-- navbar (+ logo) + responsive (conversion en icon hamburger) -->
-			<nav class="navbar navbar-dark bg-dark navbar-expand-lg p-4">
+  		<!-- navbar (+ logo) + responsive (conversion en icon hamburger) -->
+  		<section class="bgaccueil">
+  			<nav class="container navbar navbar-expand-lg p-4">
 				<h1 class="textP"><a class="textP" href="#">Live Question</a></h1>
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-spy="scroll" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
@@ -68,3 +68,6 @@ include_once("./traitement/traitement_profil.php")
 			</nav>
 
 
+  		</section>
+		
+			

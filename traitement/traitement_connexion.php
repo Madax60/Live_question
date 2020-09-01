@@ -1,7 +1,7 @@
 <?php
 include_once('./traitement/connexiondb.php'); // Fichier PHP contenant la connexion à votre BDDgenre
  
-if(isset($_POST['formconnection'])) 
+if(isset($_POST['formconnect'])) 
 {
    $mailconnect = htmlspecialchars($_POST['mailconnect']);
    $mdpconnect = htmlspecialchars($_POST['mdpconnect']);

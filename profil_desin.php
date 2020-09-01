@@ -7,3 +7,6 @@ include_once("./traitement/traitement_desinscription.php");
 	<h1>Vous êtes désinscris</h1>
 	<a href="./index.php">Revenir à l'accueil</a>
 </section>
+
+
+

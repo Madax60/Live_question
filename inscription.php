@@ -1,7 +1,7 @@
 <?php
 
 $bodyClass = "bgConnex";
-
+include_once ("traitement/traitement_inscription.php");
 include_once ("includes/header.php");
 ?>
 
@@ -41,7 +41,7 @@ include_once ("includes/header.php");
     						<label align="center" for="mdp" class="form-label">Mot de Passe</label>
     					</div>
     					<div class="col-sm-8">
-      						<input type="text" class="form-control" id="mdp" placeholder="Votre Mot de Passe">
+      						<input type="password" class="form-control" id="mdp" placeholder="Votre Mot de Passe">
     					</div>
   					</div>
 
@@ -50,18 +50,19 @@ include_once ("includes/header.php");
     						<label align="center" for="mdp2" class="form-label">Confirmation Mot de Passe</label>
     					</div>
     					<div class="col-sm-8">
-      						<input type="text" class="form-control" id="mdp2" placeholder="Confirmez votre mdp">
+      						<input type="password" class="form-control" id="mdp2" placeholder="Confirmez votre mdp">
     					</div>
   					</div>
 		            <div class="form-group row">
 		               <button type="submit" name="forminscription"class="btn btn-primary my-auto mx-auto">Je m'inscris</button>
 		            </div>
+                <?php
+             if(isset($erreur)) {
+                echo '<font color="red">'.$erreur."</font>";
+             }
+             ?>
 		         </form>
-		         <?php
-		         if(isset($erreur)) {
-		            echo '<font color="red">'.$erreur."</font>";
-		         }
-		         ?>
+		         
 			</div>
 		</section>
 	  

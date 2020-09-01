@@ -44,9 +44,12 @@ a,a:hover{
 	color:white;
 }
 
+.bgaccueil{
+	background-color: #1a2d34;
+}
+
 #accueil{
 	height:85vh;
-    background-color: #002A37;
     border-bottom-left-radius:50% 10%;
     border-bottom-right-radius:50% 10%;
 }

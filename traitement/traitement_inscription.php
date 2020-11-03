@@ -16,7 +16,7 @@ if(isset($_POST['forminscription'])) {
                $mailexist = $reqmail->rowCount();
                if($mailexist == 0) {
                   if($mdp == $mdp2) {
-                     $insertmbr = $bdd->prepare("INSERT INTO `profil` (`Pseudo_profil`, `Mail_profil`, `MotDePasse_profil`, `Genre_profil`, `Id_role`) VALUES ( ?, ?, ?, ?, 2);");
+                     $insertmbr = $bdd->prepare("INSERT INTO `utilisateur` (`pseudo`, `mail`, `mdp`, `prenom`, `date_creation_compte`) VALUES ( ?, ?, ?, ?, now());");
                      $insertmbr->execute(array($pseudo, $mail, $mdp, $genre));
 
                      $erreur = "Votre compte a bien été créé ! <a href=\"connexion.php\">Me connecter</a>";
@@ -36,4 +36,5 @@ if(isset($_POST['forminscription'])) {
       $erreur = "Tous les champs doivent être complétés !";
    }
 }
+
 ?>

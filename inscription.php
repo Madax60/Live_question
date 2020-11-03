@@ -14,14 +14,14 @@ include_once ("includes/header.php");
 		             <div class="form-group row">
     					<label align="center" for="pseudo" class="col-sm-4 col-form-label">Pseudo</label>
     					<div class="col-sm-8">
-      						<input type="text" class="form-control" id="pseudo" placeholder="Votre Pseudo">
+      						<input type="text" class="form-control" name="pseudo" id="pseudo" placeholder="Votre Pseudo">
     					</div>
   					</div>
 
   					 <div class="form-group row">
     					<label align="center" for="mail" class="col-sm-4 col-form-label">Mail</label>
     					<div class="col-sm-8">
-      						<input type="email" class="form-control" id="mail" placeholder="Votre Adresse mail">
+      						<input type="email" class="form-control" name="mail" id="mail" placeholder="Votre Adresse mail">
     					</div>
   					</div>
             <div class="row ">
@@ -41,7 +41,7 @@ include_once ("includes/header.php");
     						<label align="center" for="mdp" class="form-label">Mot de Passe</label>
     					</div>
     					<div class="col-sm-8">
-      						<input type="password" class="form-control" id="mdp" placeholder="Votre Mot de Passe">
+      						<input type="password" class="form-control" name="mdp" id="mdp" placeholder="Votre Mot de Passe">
     					</div>
   					</div>
 
@@ -50,11 +50,11 @@ include_once ("includes/header.php");
     						<label align="center" for="mdp2" class="form-label">Confirmation Mot de Passe</label>
     					</div>
     					<div class="col-sm-8">
-      						<input type="password" class="form-control" id="mdp2" placeholder="Confirmez votre mdp">
+      						<input type="password" class="form-control" name="mdp2" id="mdp2" placeholder="Confirmez votre mdp">
     					</div>
   					</div>
 		            <div class="form-group row">
-		               <button type="submit" name="forminscription"class="btn btn-primary my-auto mx-auto">Je m'inscris</button>
+		               <button type="submit" name="forminscription" class="btn btn-primary my-auto mx-auto">Je m'inscris</button>
 		            </div>
                 <?php
              if(isset($erreur)) {

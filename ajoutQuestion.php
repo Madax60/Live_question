@@ -50,3 +50,27 @@ include_once ("includes/header.php");
 var_dump($_SESSION['id']);
 include_once ("includes/footer.php");
 ?>
+
+
+
+
+<?php 
+
+if (isset($_POST['add'])) {
+    $titleadd = $_POST['titleadd'];
+    $contentadd = $_POST['contentadd'];
+    if (!empty($titleadd) AND !empty($contentadd)) {
+        $insertbd = $bdd->prepare("INSERT INTO `article`(`title`, `contenu`) VALUES (?,?)")
+        $insertbd->execute(array($titleadd, $contentadd));
+    }
+}
+
+?>
+
+<form action="ajoutQuestion.php" method="post"> 
+    <div class="form-group">
+        <input type="text" name="titleadd" class="form-control" placeholder="Insérer un titre">
+        <input type="text" name="contentadd" class="form-control" placeholder="Insérer un contenu">
+    </div>
+    <button type="submit" name="add" class="btn vld">Valider</button>
+</form>
